@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Silicon Institute of Technology - Static Frontend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+      }
+      .header {
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        height: 90px;
+      }
+      .logo {
+        height: 70px;
+        width: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #333;
+        /* Replace with <img src="your-logo.png"> */
+      }
+      .main-nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-left: 50px;
+        align-content: end;
+
+      }
+      .dropdown {
+        position: relative;
+      }
+      .dropbtn {
+        font-weight: 600;
+        color: #1a237e;
+        text-decoration: none;
+        padding: 8px 12px;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #fff;
+        min-width: 180px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        z-index: 10;
+      }
+      .dropdown-content a {
+        display: block;
+        padding: 10px 20px;
+
+        text-decoration: none;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .main-nav a {
+        font-weight: 600;
+        color: #1a237e;
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: background 0.2s;
+      }
+      .main-nav a:hover,
+      .dropdown-content a:hover {
+        background: #e3e6f3;
+      }
+
+      .hero {
+        background: #e3e6f3;
+        padding: 60px 0 40px 0;
+        text-align: center;
+      }
+      .hero-title {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #1a237e;
+        margin-bottom: 10px;
+      }
+      .hero-desc {
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 30px;
+      }
+      .hero-img {
+        width: 80%;
+        max-width: 700px;
+        height: 250px;
+        background: #ccc;
+        margin: 0 auto 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        font-size: 1.1em;
+        border-radius: 12px;
+        /* Replace with <img src="your-hero-image.jpg"> */
+      }
+      .main-content {
+        max-width: 1100px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+        padding: 40px 30px;
+      }
+      .section-title {
+        color: #1a237e;
+        font-size: 1.5em;
+        margin-bottom: 18px;
+        font-weight: bold;
+      }
+      .section {
+        margin-bottom: 40px;
+      }
+      .footer {
+        background: #1a237e;
+        color: #fff;
+        text-align: center;
+        padding: 18px 0;
+        margin-top: 40px;
+        font-size: 1em;
+      }
+      @media (max-width: 700px) {
+        .header {
+          flex-direction: column;
+          height: auto;
+          padding: 20px;
+        }
+        nav {
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 10px;
+        }
+        .main-content {
+          padding: 20px 8px;
+        }
+        .hero-img {
+          height: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <img
+          src="D:\studies\Programs\IWT LAB\logo.png"
+          alt="logo of Silicon Institute of Technology"
+          style="width: 100%; height: 100%; object-fit: contain"
+        />
+      </div>
+      <nav class="main-nav">
+        <div class="dropdown">
+          <a href="#" class="dropbtn">ACADEMICS</a>
+          <div class="dropdown-content">
+            <a href="programs.html">PROGRAMS</a>
+            <a href="https://silicon.ac.in/summer-internship/"
+              >SUMMER INTERNSHIP</a
+            >
+            <a href="https://silicon.ac.in/practice-school/">PRACTICE SCHOOL</a>
+          </div>
+        </div>
+        <a href="https://alumni.silicon.ac.in/" target="_blank">ALUMNI</a>
+        <button onclick="document.location='https://silicon.ac.in/admissions-at-silicon/'">ADMISSIONS</button>
+        <a href="#">PLACEMENTS</a>
+        <a href="#">RESEARCH</a>
+        <a href="#">ENTREPRENEURSHIP</a>
+        <a href="#">CAMPUS LIFE</a>
+        <a href="#contact-section">ABOUT US</a>
+        <a href="collab.html">COLLAB</a>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <div class="hero-title">Silicon Institute of Technology</div>
+      <div class="hero-desc">
+        Empowering students for a brighter future through excellence in
+        education, research, and innovation.
+      </div>
+      <div class="hero-img">
+        <img
+          src="D:\studies\Programs\IWT LAB\8.jpg"
+          alt="Building of Silicon Institute of Technology"
+          style="
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+          "
+        />
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="section">
+        <div class="section-title">About Silicon</div>
+        <p>
+          <!-- Add about content here -->
+          Silicon Institute of Technology is a premier engineering institution
+          committed to academic excellence, research, and holistic development
+          of students. Our campus offers state-of-the-art facilities and a
+          vibrant learning environment.
+        </p>
+      </div>
+      <div class="section">
+        <div class="section-title">Why Choose Us?</div>
+        <ul>
+          <li>Experienced faculty and industry-oriented curriculum</li>
+          <li>Modern labs and research centers</li>
+          <li>Strong placement record</li>
+          <li>Entrepreneurship and innovation support</li>
+          <li>Rich campus life and extracurricular activities</li>
+        </ul>
+      </div>
+      <div class="section" id="contact-section">
+        <div class="section-title">Contact</div>
+        <p>
+          Address:
+          <span style="color: #1a237e"
+            >Silicon University, Silicon Hills, Patia, Bhubaneswar- 751024
+            Odisha</span
+          ><br />
+          Phone: <span style="color: #1a237e">9937289499/ 067427254</span><br />
+          Email: <span style="color: #1a237e"><a href="mailto: eee.23beeh82@silicon.ac.in">Send</a></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Silicon Institute of Technology. All rights reserved.
+    </div>
+  </body>
+</html>
